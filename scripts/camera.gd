@@ -1,3 +1,5 @@
+# Godot MLP Models: Camera freelook and movement script
+#
 # Copyright © 2017-2018 Hugo Locurcio and contributors - MIT License
 # See `LICENSE.md` included in the source distribution for details.
 
