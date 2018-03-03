@@ -22,8 +22,7 @@ You can also
 [download a ZIP archive](https://github.com/Calinou/godot-mlp-models/archive/master.zip)
 if you do not have Git installed.
 
-**You need [Godot 3.0 RC 2](https://godotengine.org/article/dev-snapshot-godot-3-0-rc-2)
-or newer to run this demo.**
+**You need Godot 3.0 or newer to run this demo.**
 
 Once you have the project files, open the Godot Project Manager, click the
 **Import** button, then select the `project.godot` file of this project.
@@ -41,6 +40,7 @@ the background, which would slow down the running project a lot.
 - <kbd>Mouse Wheel</kbd>: Change movement speed (always effective)
 - <kbd>Escape</kbd>: Toggle menu
 - <kbd>F1</kbd>: Toggle FPS display
+- <kbd>F3</kbd>: Toggle frame time graph
 - <kbd>F10</kbd>: Toggle mouse capture
 - <kbd>F11</kbd> or <kbd>Alt + Enter</kbd>: Toggle fullscreen
 
