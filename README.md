@@ -14,7 +14,7 @@ run slowly, especially at larger resolutions.*
 
 Clone the Git repository:
 
-```
+```bash
 git clone https://github.com/Calinou/godot-mlp-models.git
 ```
 
