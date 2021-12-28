@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/applejack_hat.png-c63a3472ccff065ce38881ee87264de7.stex"
+type="StreamTexture2D"
+uid="uid://c5633id8ho03r"
+path.s3tc="res://.godot/imported/applejack_hat.png-c63a3472ccff065ce38881ee87264de7.s3tc.stex"
+path.etc2="res://.godot/imported/applejack_hat.png-c63a3472ccff065ce38881ee87264de7.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/applejack_hat.png"
-source_md5="0067036896d998983e91152b483abb98"
-
-dest_files=[ "res://.import/applejack_hat.png-c63a3472ccff065ce38881ee87264de7.stex" ]
-dest_md5="3b9dd4d0b0f517dcbdce00851e7b7101"
+dest_files=["res://.godot/imported/applejack_hat.png-c63a3472ccff065ce38881ee87264de7.s3tc.stex", "res://.godot/imported/applejack_hat.png-c63a3472ccff065ce38881ee87264de7.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

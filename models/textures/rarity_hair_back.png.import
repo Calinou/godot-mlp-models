@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/rarity_hair_back.png-44da1d27f3fd6531b358dcc540f806cd.stex"
+type="StreamTexture2D"
+uid="uid://di6eqb7gsckub"
+path.s3tc="res://.godot/imported/rarity_hair_back.png-44da1d27f3fd6531b358dcc540f806cd.s3tc.stex"
+path.etc2="res://.godot/imported/rarity_hair_back.png-44da1d27f3fd6531b358dcc540f806cd.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/rarity_hair_back.png"
-source_md5="e791d0c23107d8e0a2c4209cad0e2723"
-
-dest_files=[ "res://.import/rarity_hair_back.png-44da1d27f3fd6531b358dcc540f806cd.stex" ]
-dest_md5="148f2a413b09ef91a5207cb34c644dba"
+dest_files=["res://.godot/imported/rarity_hair_back.png-44da1d27f3fd6531b358dcc540f806cd.s3tc.stex", "res://.godot/imported/rarity_hair_back.png-44da1d27f3fd6531b358dcc540f806cd.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

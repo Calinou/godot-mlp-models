@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/txtr_derpy_hair_back.png-cc2cb1619f720da01d4fa6e2469a27dc.stex"
+type="StreamTexture2D"
+uid="uid://dtn3dcdt5hiex"
+path.s3tc="res://.godot/imported/txtr_derpy_hair_back.png-cc2cb1619f720da01d4fa6e2469a27dc.s3tc.stex"
+path.etc2="res://.godot/imported/txtr_derpy_hair_back.png-cc2cb1619f720da01d4fa6e2469a27dc.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/txtr_derpy_hair_back.png"
-source_md5="b90c964d78ad4d67b3f53504bea822f2"
-
-dest_files=[ "res://.import/txtr_derpy_hair_back.png-cc2cb1619f720da01d4fa6e2469a27dc.stex" ]
-dest_md5="5000b26e6e9802cc6e35fe19e09a6e1b"
+dest_files=["res://.godot/imported/txtr_derpy_hair_back.png-cc2cb1619f720da01d4fa6e2469a27dc.s3tc.stex", "res://.godot/imported/txtr_derpy_hair_back.png-cc2cb1619f720da01d4fa6e2469a27dc.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

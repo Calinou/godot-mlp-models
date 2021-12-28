@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/txtr_luna_horn.png-1dbf6f3f374544956fc4508ec2a5a1e4.stex"
+type="StreamTexture2D"
+uid="uid://bradgfwktnyfx"
+path.s3tc="res://.godot/imported/txtr_luna_horn.png-1dbf6f3f374544956fc4508ec2a5a1e4.s3tc.stex"
+path.etc2="res://.godot/imported/txtr_luna_horn.png-1dbf6f3f374544956fc4508ec2a5a1e4.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/txtr_luna_horn.png"
-source_md5="f7f56e0c73d6e7ca9cc094a2c1bed11b"
-
-dest_files=[ "res://.import/txtr_luna_horn.png-1dbf6f3f374544956fc4508ec2a5a1e4.stex" ]
-dest_md5="db23183513c791de630b4bf6a71a72c8"
+dest_files=["res://.godot/imported/txtr_luna_horn.png-1dbf6f3f374544956fc4508ec2a5a1e4.s3tc.stex", "res://.godot/imported/txtr_luna_horn.png-1dbf6f3f374544956fc4508ec2a5a1e4.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/txtr_celestia_tail.png-7442d14c66448e40e4b6f86a3d308c03.stex"
+type="StreamTexture2D"
+uid="uid://yyccxo837bmg"
+path.s3tc="res://.godot/imported/txtr_celestia_tail.png-7442d14c66448e40e4b6f86a3d308c03.s3tc.stex"
+path.etc2="res://.godot/imported/txtr_celestia_tail.png-7442d14c66448e40e4b6f86a3d308c03.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/txtr_celestia_tail.png"
-source_md5="6d123fc9a02d4677cf02bddd7bcafdb7"
-
-dest_files=[ "res://.import/txtr_celestia_tail.png-7442d14c66448e40e4b6f86a3d308c03.stex" ]
-dest_md5="2bd3fcc89f2e5f01e777cff5c1ee1841"
+dest_files=["res://.godot/imported/txtr_celestia_tail.png-7442d14c66448e40e4b6f86a3d308c03.s3tc.stex", "res://.godot/imported/txtr_celestia_tail.png-7442d14c66448e40e4b6f86a3d308c03.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

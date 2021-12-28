@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/rainbow_dash_hair_front.png-9d91bfd8e6cae2bc34f8b1b2632cabc5.stex"
+type="StreamTexture2D"
+uid="uid://dirb3hqtlw0on"
+path.s3tc="res://.godot/imported/rainbow_dash_hair_front.png-9d91bfd8e6cae2bc34f8b1b2632cabc5.s3tc.stex"
+path.etc2="res://.godot/imported/rainbow_dash_hair_front.png-9d91bfd8e6cae2bc34f8b1b2632cabc5.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/rainbow_dash_hair_front.png"
-source_md5="d4eb7a520bbd2855c975c9a1fe91bad2"
-
-dest_files=[ "res://.import/rainbow_dash_hair_front.png-9d91bfd8e6cae2bc34f8b1b2632cabc5.stex" ]
-dest_md5="b3eb312eebe4dd3816a28f2ca1a73859"
+dest_files=["res://.godot/imported/rainbow_dash_hair_front.png-9d91bfd8e6cae2bc34f8b1b2632cabc5.s3tc.stex", "res://.godot/imported/rainbow_dash_hair_front.png-9d91bfd8e6cae2bc34f8b1b2632cabc5.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

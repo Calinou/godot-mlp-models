@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/twilight_hair_back.png-d573c53eb60d238cf45b43cdc363a83f.stex"
+type="StreamTexture2D"
+uid="uid://bk55bsoqusdwd"
+path.s3tc="res://.godot/imported/twilight_hair_back.png-d573c53eb60d238cf45b43cdc363a83f.s3tc.stex"
+path.etc2="res://.godot/imported/twilight_hair_back.png-d573c53eb60d238cf45b43cdc363a83f.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/twilight_hair_back.png"
-source_md5="683a03fcbf75fdba27df5766c166d8de"
-
-dest_files=[ "res://.import/twilight_hair_back.png-d573c53eb60d238cf45b43cdc363a83f.stex" ]
-dest_md5="f91f5679d2f3afd93e569cd2cd729a00"
+dest_files=["res://.godot/imported/twilight_hair_back.png-d573c53eb60d238cf45b43cdc363a83f.s3tc.stex", "res://.godot/imported/twilight_hair_back.png-d573c53eb60d238cf45b43cdc363a83f.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

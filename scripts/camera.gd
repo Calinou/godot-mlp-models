@@ -1,13 +1,13 @@
 # Godot MLP Models: Camera freelook and movement script
 #
-# Copyright © 2017-2020 Hugo Locurcio and contributors - MIT License
+# Copyright © 2017-2021 Hugo Locurcio and contributors - MIT License
 # See `LICENSE.md` included in the source distribution for details.
 
-extends Camera
+extends Camera3D
 
 const MOUSE_SENSITIVITY = 0.002
 
-onready var FPSCounter = $"../FPSCounter"
+@onready var FPSCounter = $"../FPSCounter"
 
 # The camera movement speed (tweakable using the mouse wheel)
 var move_speed = 0.5
@@ -21,11 +21,11 @@ var velocity = Vector3()
 # The initial camera node rotation
 var initial_rotation = PI/2
 
-func _enter_tree():
+func _enter_tree() -> void:
 	# Capture the mouse (can be toggled by pressing F10)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-func _input(event):
+func _input(event: InputEvent) -> void:
 	# Mouse look (effective only if the mouse is captured)
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		# Horizontal mouse look
@@ -39,7 +39,7 @@ func _input(event):
 
 	# Toggle fullscreen
 	if event.is_action_pressed("toggle_fullscreen"):
-		OS.set_window_fullscreen(!OS.is_window_fullscreen())
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN else DisplayServer.WINDOW_MODE_FULLSCREEN)
 
 	# Toggle mouse capture
 	if event.is_action_pressed("toggle_mouse_capture"):
@@ -56,7 +56,7 @@ func _input(event):
 	if event.is_action_pressed("movement_speed_decrease"):
 		move_speed = max(0.1, move_speed - 0.1)
 
-func _process(delta):
+func _process(delta: float) -> void:
 
 	# Movement
 
@@ -92,18 +92,18 @@ func _process(delta):
 	# Rotate the motion based on the camera angle
 	motion = motion \
 		.rotated(Vector3(0, 1, 0), rotation.y - initial_rotation) \
-		.rotated(Vector3(1, 0, 0), cos(rotation.y)*rotation.x) \
-		.rotated(Vector3(0, 0, 1), -sin(rotation.y)*rotation.x)
+		.rotated(Vector3(1, 0, 0), cos(rotation.y) * rotation.x) \
+		.rotated(Vector3(0, 0, 1), -sin(rotation.y) * rotation.x)
 
 	# Add motion
-	velocity += motion*move_speed
+	velocity += motion * move_speed
 
 	# Friction
 	velocity *= 0.9
 
 	# Apply velocity
-	translation += velocity*delta
+	position += velocity * delta
 
-func _exit_tree():
+func _exit_tree() -> void:
 	# Restore the mouse cursor upon quitting
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

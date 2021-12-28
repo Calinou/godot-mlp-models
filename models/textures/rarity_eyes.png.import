@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/rarity_eyes.png-a49b4e5dbcb3d37ed68fd19f92f98c3b.stex"
+type="StreamTexture2D"
+uid="uid://cm64dev7eub5v"
+path.s3tc="res://.godot/imported/rarity_eyes.png-a49b4e5dbcb3d37ed68fd19f92f98c3b.s3tc.stex"
+path.etc2="res://.godot/imported/rarity_eyes.png-a49b4e5dbcb3d37ed68fd19f92f98c3b.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/rarity_eyes.png"
-source_md5="86d02ac8f0d1b19bb261b110cdc79b6d"
-
-dest_files=[ "res://.import/rarity_eyes.png-a49b4e5dbcb3d37ed68fd19f92f98c3b.stex" ]
-dest_md5="67c1c59ef495e9d10474a7a050cb1d49"
+dest_files=["res://.godot/imported/rarity_eyes.png-a49b4e5dbcb3d37ed68fd19f92f98c3b.s3tc.stex", "res://.godot/imported/rarity_eyes.png-a49b4e5dbcb3d37ed68fd19f92f98c3b.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

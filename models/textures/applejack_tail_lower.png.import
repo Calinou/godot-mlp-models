@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/applejack_tail_lower.png-a0f9411891d3cc1b950089501f41aee0.stex"
+type="StreamTexture2D"
+uid="uid://ckd18oj6ugwrp"
+path.s3tc="res://.godot/imported/applejack_tail_lower.png-a0f9411891d3cc1b950089501f41aee0.s3tc.stex"
+path.etc2="res://.godot/imported/applejack_tail_lower.png-a0f9411891d3cc1b950089501f41aee0.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/applejack_tail_lower.png"
-source_md5="6cbdb173dc209d8b6b23b7a0db972233"
-
-dest_files=[ "res://.import/applejack_tail_lower.png-a0f9411891d3cc1b950089501f41aee0.stex" ]
-dest_md5="28ee9770558f9dde9e2c3dec347f94ca"
+dest_files=["res://.godot/imported/applejack_tail_lower.png-a0f9411891d3cc1b950089501f41aee0.s3tc.stex", "res://.godot/imported/applejack_tail_lower.png-a0f9411891d3cc1b950089501f41aee0.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

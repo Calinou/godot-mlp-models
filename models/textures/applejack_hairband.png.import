@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/applejack_hairband.png-557dcfd394f302eb67d67782f1f7c856.stex"
+type="StreamTexture2D"
+uid="uid://cj2vsiavvllyl"
+path.s3tc="res://.godot/imported/applejack_hairband.png-557dcfd394f302eb67d67782f1f7c856.s3tc.stex"
+path.etc2="res://.godot/imported/applejack_hairband.png-557dcfd394f302eb67d67782f1f7c856.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/applejack_hairband.png"
-source_md5="cc85bb4fc92a3ae23207765838154bcd"
-
-dest_files=[ "res://.import/applejack_hairband.png-557dcfd394f302eb67d67782f1f7c856.stex" ]
-dest_md5="4e0e85f34309eb831314afd22a751adc"
+dest_files=["res://.godot/imported/applejack_hairband.png-557dcfd394f302eb67d67782f1f7c856.s3tc.stex", "res://.godot/imported/applejack_hairband.png-557dcfd394f302eb67d67782f1f7c856.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

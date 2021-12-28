@@ -1,15 +1,15 @@
 # Godot MLP Models: Frame time graph display control
 #
-# Copyright © 2017-2020 Hugo Locurcio and contributors - MIT License
+# Copyright © 2017-2021 Hugo Locurcio and contributors - MIT License
 # See `LICENSE.md` included in the source distribution for details.
 
 extends Panel
 
 # Stores positions for drawing the frame time graph
-var points = PoolVector2Array()
+var points = PackedVector2Array()
 
 # Stores dynamically-adjusted colors for drawing the frame time graph
-var colors = PoolColorArray()
+var colors = PackedColorArray()
 
 # The number of frames drawn since the application started
 var frames_drawn = 0
@@ -32,7 +32,7 @@ var frame_time = 0
 # The color gradient used for coloring the frame time bars
 var gradient = Gradient.new()
 
-func _ready():
+func _ready() -> void:
 	# Green-yellow-red gradient
 	gradient.set_color(0, Color(0.0, 1.0, 0.0))
 	gradient.add_point(0.5, Color(1.0, 1.0, 0.0))
@@ -40,13 +40,13 @@ func _ready():
 
 	# Pre-allocate the `points` and `colors` arrays
 	# This makes it possible to use `PoolVector2Array.set()` directly on them
-	points.resize(rect_size.x)
-	colors.resize(rect_size.x)
+	points.resize(rect_size.x + 1)
+	colors.resize(rect_size.x + 1)
 
-func _process(delta):
+func _process(delta: float) -> void:
 	frames_drawn = Engine.get_frames_drawn()
-	now = OS.get_ticks_msec()
-	frame_time = now - previous
+	now = Time.get_ticks_usec()
+	frame_time = (now - previous) * 0.001
 
 	# Color the previous frame bar depending on the frame time
 	colors.set(frame_position, frame_color)
@@ -70,19 +70,22 @@ func _process(delta):
 	colors.set(frame_position, Color(1.0, 1.0, 1.0, 1.0))
 	colors.set(frame_position + 1, Color(1.0, 1.0, 1.0, 1.0))
 
-	previous = OS.get_ticks_msec()
+	previous = Time.get_ticks_usec()
 
 	update()
 
-func _draw():
-	draw_multiline_colors(points, colors, 1.0, true)
 
-func _input(event):
+func _draw() -> void:
+	draw_multiline_colors(points, colors)
+
+
+func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("toggle_frame_time_graph"):
 		visible = !visible
 
-func _on_resized():
+
+func _on_resized() -> void:
 	# Resize the arrays when resizing the control to avoid setting
 	# nonexistent indices once the window has been resized
-	points.resize(rect_size.x)
-	colors.resize(rect_size.x)
+	points.resize(rect_size.x + 1)
+	colors.resize(rect_size.x + 1)

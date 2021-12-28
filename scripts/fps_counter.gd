@@ -1,7 +1,7 @@
 # Godot MLP Models: Custom FPS counter implementation
 # Inspired by <http://www.growingwiththeweb.com/2017/12/fast-simple-js-fps-counter.html>
 #
-# Copyright © 2017-2020 Hugo Locurcio and contributors - MIT License
+# Copyright © 2017-2021 Hugo Locurcio and contributors - MIT License
 # See `LICENSE.md` included in the source distribution for details.
 
 extends Label
@@ -12,11 +12,11 @@ var times = []
 # Frames per second
 var fps = 0
 
-func _process(delta):
-	var now = OS.get_ticks_msec()
+func _process(_delta: float) -> void:
+	var now = Time.get_ticks_usec()
 
 	# Remove frames older than 1 second in the `times` array
-	while times.size() > 0 and times[0] <= now - 1000:
+	while times.size() > 0 and times[0] <= now - 1_000_000:
 		times.pop_front()
 
 	times.append(now)

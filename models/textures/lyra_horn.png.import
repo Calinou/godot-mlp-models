@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/lyra_horn.png-fd07fa225cb19eb3fa4d0d4c83d861e5.stex"
+type="StreamTexture2D"
+uid="uid://cypsrak6cm3cj"
+path.s3tc="res://.godot/imported/lyra_horn.png-fd07fa225cb19eb3fa4d0d4c83d861e5.s3tc.stex"
+path.etc2="res://.godot/imported/lyra_horn.png-fd07fa225cb19eb3fa4d0d4c83d861e5.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/lyra_horn.png"
-source_md5="8ad45bfddd3376626ece43b9bee2dac2"
-
-dest_files=[ "res://.import/lyra_horn.png-fd07fa225cb19eb3fa4d0d4c83d861e5.stex" ]
-dest_md5="1b1ca7bc70503942ca5b1ae4d2d9cfe5"
+dest_files=["res://.godot/imported/lyra_horn.png-fd07fa225cb19eb3fa4d0d4c83d861e5.s3tc.stex", "res://.godot/imported/lyra_horn.png-fd07fa225cb19eb3fa4d0d4c83d861e5.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

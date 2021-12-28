@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/lyra_eyes.png-75b31ecd7ad8b1a1b9763eeebf4f1ca7.stex"
+type="StreamTexture2D"
+uid="uid://cdsm7c1433jpw"
+path.s3tc="res://.godot/imported/lyra_eyes.png-75b31ecd7ad8b1a1b9763eeebf4f1ca7.s3tc.stex"
+path.etc2="res://.godot/imported/lyra_eyes.png-75b31ecd7ad8b1a1b9763eeebf4f1ca7.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/lyra_eyes.png"
-source_md5="f07618d913d16d3bee5c4864b138e3c7"
-
-dest_files=[ "res://.import/lyra_eyes.png-75b31ecd7ad8b1a1b9763eeebf4f1ca7.stex" ]
-dest_md5="ff1df60fc15a3a7910810a1dc70eaef8"
+dest_files=["res://.godot/imported/lyra_eyes.png-75b31ecd7ad8b1a1b9763eeebf4f1ca7.s3tc.stex", "res://.godot/imported/lyra_eyes.png-75b31ecd7ad8b1a1b9763eeebf4f1ca7.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

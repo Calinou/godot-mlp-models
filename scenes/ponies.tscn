@@ -1,0 +1,143 @@
+[gd_scene load_steps=24 format=3 uid="uid://d3paosgbxy5yg"]
+
+[ext_resource type="FontData" uid="uid://b46fe2etm86q5" path="res://fonts/inter_ui_bold.ttf" id="1_c61o7"]
+[ext_resource type="Script" path="res://scripts/fps_counter.gd" id="2_y3fld"]
+[ext_resource type="Script" path="res://scripts/frame_time_graph.gd" id="3_eckwm"]
+[ext_resource type="VoxelGIData" uid="uid://cjoysij3ramk5" path="res://scenes/ponies.VoxelGI_data.res" id="4_sybs0"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="5_hb7py"]
+[ext_resource type="PackedScene" uid="uid://blxla17c43anq" path="res://models/misc/plane.dae" id="6_rvuvg"]
+[ext_resource type="PackedScene" uid="uid://dgfc3ta82oa64" path="res://models/celestia.dae" id="7_dpaxd"]
+[ext_resource type="PackedScene" uid="uid://j7cmd5ktijn6" path="res://models/luna.dae" id="8_yr8io"]
+[ext_resource type="PackedScene" uid="uid://w5y3bb3d3tmg" path="res://models/twilight.dae" id="9_gf3wf"]
+[ext_resource type="PackedScene" uid="uid://cp1fhsnvh5m8i" path="res://models/rarity.dae" id="10_y8bax"]
+[ext_resource type="PackedScene" uid="uid://383a6fpqp2ej" path="res://models/rainbow_dash.dae" id="11_f3iio"]
+[ext_resource type="PackedScene" uid="uid://2qbvdyserbgw" path="res://models/pinkie.dae" id="12_xxai2"]
+[ext_resource type="PackedScene" uid="uid://cy14s3jctl1k1" path="res://models/applejack.dae" id="13_sbbci"]
+[ext_resource type="PackedScene" uid="uid://byby5djjp07qi" path="res://models/fluttershy.dae" id="14_d65q6"]
+[ext_resource type="PackedScene" uid="uid://jke8pcvh5her" path="res://models/lyra.dae" id="15_c2x1f"]
+[ext_resource type="PackedScene" uid="uid://bqrsstjmbie8x" path="res://models/trixie.dae" id="16_k20ii"]
+[ext_resource type="PackedScene" uid="uid://b2pg2rxksteht" path="res://models/bonbon.dae" id="17_02qd1"]
+[ext_resource type="PackedScene" uid="uid://bk10tu5q1dse2" path="res://models/derpy.dae" id="18_sw3nq"]
+
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_q8i00"]
+
+[sub_resource type="Sky" id="1"]
+sky_material = SubResource( "PhysicalSkyMaterial_q8i00" )
+radiance_size = 4
+
+[sub_resource type="Environment" id="2"]
+background_mode = 2
+sky = SubResource( "1" )
+ambient_light_sky_contribution = 0.0
+ambient_light_energy = 0.0
+tonemap_mode = 3
+tonemap_white = 6.0
+ssao_enabled = true
+ssao_radius = 0.5
+ssao_intensity = 0.5
+sdfgi_read_sky_light = true
+sdfgi_bounce_feedback = 1.0
+sdfgi_cascades = 0
+sdfgi_min_cell_size = 0.05
+sdfgi_cascade0_distance = 3.2
+sdfgi_max_distance = 51.2
+sdfgi_y_scale = 2
+glow_intensity = 1.0
+
+[sub_resource type="Font" id="3"]
+data/0 = ExtResource( "1_c61o7" )
+
+[sub_resource type="StyleBoxFlat" id="5"]
+bg_color = Color(0, 0, 0, 0.501961)
+corner_detail = 1
+anti_aliasing_size = 1.0
+
+[node name="Ponies" type="WorldEnvironment"]
+environment = SubResource( "2" )
+
+[node name="FPSCounter" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 69.0
+offset_bottom = 36.0
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/line_spacing = 0
+theme_override_constants/shadow_offset_y = 3
+theme_override_fonts/font = SubResource( "3" )
+theme_override_font_sizes/font_size = 16
+text = "60 FPS"
+script = ExtResource( "2_y3fld" )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FrameTimeGraph" type="Panel" parent="."]
+visible = false
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_styles/panel = SubResource( "5" )
+script = ExtResource( "3_eckwm" )
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.5, -0.496732, 0.709406, 0, 0.819152, 0.573577, -0.866025, 0.286788, -0.409576, 8, 12, -8)
+shadow_enabled = true
+shadow_bias = 0.03
+shadow_normal_bias = 2.0
+directional_shadow_mode = 0
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 1.0
+directional_shadow_max_distance = 26.0
+
+[node name="VoxelGI" type="VoxelGI" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9, 0)
+extents = Vector3(12, 2, 12)
+data = ExtResource( "4_sybs0" )
+
+[node name="Camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.25, 10)
+far = 200.0
+script = ExtResource( "5_hb7py" )
+
+[node name="Plane" parent="." instance=ExtResource( "6_rvuvg" )]
+transform = Transform3D(1000, 0, 0, 0, 1, 0, 0, 0, 1000, 0, 0, 0)
+
+[node name="Ponies" type="Node3D" parent="."]
+
+[node name="Celestia" parent="Ponies" instance=ExtResource( "7_dpaxd" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 6)
+
+[node name="Luna" parent="Ponies" instance=ExtResource( "8_yr8io" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 6)
+
+[node name="Twilight Sparkle" parent="Ponies" instance=ExtResource( "9_gf3wf" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 0)
+
+[node name="Rarity" parent="Ponies" instance=ExtResource( "10_y8bax" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 0)
+
+[node name="Rainbow Dash" parent="Ponies" instance=ExtResource( "11_f3iio" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
+
+[node name="Pinkie Pie" parent="Ponies" instance=ExtResource( "12_xxai2" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0)
+
+[node name="Applejack" parent="Ponies" instance=ExtResource( "13_sbbci" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 0)
+
+[node name="Fluttershy" parent="Ponies" instance=ExtResource( "14_d65q6" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 0)
+
+[node name="Lyra" parent="Ponies" instance=ExtResource( "15_c2x1f" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -5.5)
+
+[node name="Trixie" parent="Ponies" instance=ExtResource( "16_k20ii" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, -5.5)
+
+[node name="Bon Bon" parent="Ponies" instance=ExtResource( "17_02qd1" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -5.5)
+
+[node name="Derpy Hooves" parent="Ponies" instance=ExtResource( "18_sw3nq" )]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, -5.5)
+
+[connection signal="resized" from="FrameTimeGraph" to="FrameTimeGraph" method="_on_resized"]

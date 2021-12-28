@@ -1,9 +1,11 @@
-# Pony models test scene for Godot 3
+# Pony models test scene for Godot 4
 
-A nice-looking 3D demo for Godot 3, featuring the most important pastel horses ever.
+A nice-looking 3D demo for Godot 4, featuring the most important pastel horses ever.
 
 ![TODO](https://archive.hugo.pro/.public/godot-mlp-models/godot-mlp-models_1.jpg)
 ![TODO](https://archive.hugo.pro/.public/godot-mlp-models/godot-mlp-models_2.jpg)
+
+**Looking for a Godot 3.x version of this demo?** See the [`master` branch](https://github.com/Calinou/godot-mlp-models).
 
 ## Try it out
 
@@ -15,14 +17,14 @@ run slowly, especially at larger resolutions.*
 Clone the Git repository:
 
 ```bash
-git clone https://github.com/Calinou/godot-mlp-models.git
+git clone --branch=4.0-dev https://github.com/Calinou/godot-mlp-models.git
 ```
 
 You can also
-[download a ZIP archive](https://github.com/Calinou/godot-mlp-models/archive/master.zip)
+[download a ZIP archive](https://github.com/Calinou/godot-mlp-models/archive/4.0-dev.zip)
 if you do not have Git installed.
 
-**You need Godot 3.0 or newer to run this demo.**
+**You need a Godot 4 development build to run this demo. You can download a nightly build [here](https://hugo.pro/projects/godot-builds/).**
 
 Once you have the project files, open the Godot Project Manager, click the
 **Import** button, then select the `project.godot` file of this project.
@@ -46,7 +48,7 @@ the background, which would slow down the running project a lot.
 
 ## License
 
-Copyright © 2017-2020 Hugo Locurcio and contributors
+Copyright © 2017-2021 Hugo Locurcio and contributors
 
 - Unless otherwise specified, files in this repository are licensed under the
 MIT license, see [LICENSE.md](LICENSE.md) for more information.

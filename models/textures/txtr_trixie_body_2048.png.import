@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/txtr_trixie_body_2048.png-8ff37ed266b71348d61a45d518cdf1e9.stex"
+type="StreamTexture2D"
+uid="uid://cr37prr58u0c1"
+path.s3tc="res://.godot/imported/txtr_trixie_body_2048.png-8ff37ed266b71348d61a45d518cdf1e9.s3tc.stex"
+path.etc2="res://.godot/imported/txtr_trixie_body_2048.png-8ff37ed266b71348d61a45d518cdf1e9.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/txtr_trixie_body_2048.png"
-source_md5="59ff6edc2c6c406761d2ee26e9d0ce8e"
-
-dest_files=[ "res://.import/txtr_trixie_body_2048.png-8ff37ed266b71348d61a45d518cdf1e9.stex" ]
-dest_md5="ad0d559a330a0de1bd2e7b21b7580608"
+dest_files=["res://.godot/imported/txtr_trixie_body_2048.png-8ff37ed266b71348d61a45d518cdf1e9.s3tc.stex", "res://.godot/imported/txtr_trixie_body_2048.png-8ff37ed266b71348d61a45d518cdf1e9.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0

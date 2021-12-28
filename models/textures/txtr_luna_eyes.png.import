@@ -1,32 +1,37 @@
 [remap]
 
 importer="texture"
-type="StreamTexture"
-path="res://.import/txtr_luna_eyes.png-69c600d6fc153dad4a7132dc5f351316.stex"
+type="StreamTexture2D"
+uid="uid://dhqfp30ecpxv5"
+path.s3tc="res://.godot/imported/txtr_luna_eyes.png-69c600d6fc153dad4a7132dc5f351316.s3tc.stex"
+path.etc2="res://.godot/imported/txtr_luna_eyes.png-69c600d6fc153dad4a7132dc5f351316.etc2.stex"
+metadata={
+"imported_formats": ["s3tc", "etc2"],
+"vram_texture": true
+}
 
 [deps]
 
 source_file="res://models/textures/txtr_luna_eyes.png"
-source_md5="a0112071eda829bba79ae840285f118d"
-
-dest_files=[ "res://.import/txtr_luna_eyes.png-69c600d6fc153dad4a7132dc5f351316.stex" ]
-dest_md5="9b1b0efabac2a2c980fe6f71f3fba137"
+dest_files=["res://.godot/imported/txtr_luna_eyes.png-69c600d6fc153dad4a7132dc5f351316.s3tc.stex", "res://.godot/imported/txtr_luna_eyes.png-69c600d6fc153dad4a7132dc5f351316.etc2.stex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
-compress/hdr_mode=0
+compress/hdr_compression=1
+compress/bptc_ldr=0
 compress/normal_map=2
-flags/repeat=1
-flags/filter=true
-flags/mipmaps=true
-flags/anisotropic=true
-flags/srgb=1
+compress/channel_pack=0
+compress/streamed=false
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/normal_map_invert_y=false
 process/HDR_as_SRGB=false
-stream=false
-size_limit=0
-detect_3d=false
+process/size_limit=0
+detect_3d/compress_to=0
 svg/scale=1.0
