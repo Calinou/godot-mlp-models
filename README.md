@@ -5,6 +5,8 @@ A nice-looking 3D demo for Godot 3, featuring the most important pastel horses e
 ![TODO](https://archive.hugo.pro/.public/godot-mlp-models/godot-mlp-models_1.jpg)
 ![TODO](https://archive.hugo.pro/.public/godot-mlp-models/godot-mlp-models_2.jpg)
 
+**Looking for a Godot 4 version of this demo?** See the [`4.0-dev` branch](https://github.com/Calinou/godot-mlp-models/tree/4.0-dev).
+
 ## Try it out
 
 ***Note:** The demo is currently very demanding on the hardware and will probably
