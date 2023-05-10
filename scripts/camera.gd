@@ -31,7 +31,7 @@ func _input(event: InputEvent) -> void:
 		# Horizontal mouse look
 		rotation.y -= event.relative.x*MOUSE_SENSITIVITY
 		# Vertical mouse look, clamped to -90..90 degrees
-		rotation.x = clamp(rotation.x - event.relative.y*MOUSE_SENSITIVITY, deg2rad(-90), deg2rad(90))
+		rotation.x = clamp(rotation.x - event.relative.y*MOUSE_SENSITIVITY, deg_to_rad(-90), deg_to_rad(90))
 
 	# Toggle HUD
 	if event.is_action_pressed("toggle_hud"):

@@ -40,8 +40,8 @@ func _ready() -> void:
 
 	# Pre-allocate the `points` and `colors` arrays
 	# This makes it possible to use `PoolVector2Array.set()` directly on them
-	points.resize(rect_size.x + 1)
-	colors.resize(rect_size.x + 1)
+	points.resize(size.x + 1)
+	colors.resize(size.x + 1)
 
 func _process(delta: float) -> void:
 	frames_drawn = Engine.get_frames_drawn()
@@ -52,18 +52,18 @@ func _process(delta: float) -> void:
 	colors.set(frame_position, frame_color)
 	colors.set(frame_position + 1, frame_color)
 
-	frame_position = wrapi(frames_drawn*2, 0, int(rect_size.x))
-	frame_color = gradient.interpolate(min(frame_time/50.0, 1.0))
+	frame_position = wrapi(frames_drawn * 2, 0, int(size.x))
+	frame_color = gradient.sample(min(frame_time/50.0, 1.0))
 
 	# Every frame is represented as a bar that is ms × 5 pixels high
 	# Every line is a pair of two points, so every frame has two points defined
 	points.set(
 		frame_position,
-		Vector2(frame_position, int(rect_size.y))
+		Vector2(frame_position, int(size.y))
 	)
 	points.set(
 		frame_position + 1,
-		Vector2(frame_position + 1, int(rect_size.y) - frame_time*6)
+		Vector2(frame_position + 1, int(size.y) - frame_time*6)
 	)
 
 	# Color the current frame in white
@@ -72,7 +72,7 @@ func _process(delta: float) -> void:
 
 	previous = Time.get_ticks_usec()
 
-	update()
+	queue_redraw()
 
 
 func _draw() -> void:
@@ -87,5 +87,5 @@ func _input(event: InputEvent) -> void:
 func _on_resized() -> void:
 	# Resize the arrays when resizing the control to avoid setting
 	# nonexistent indices once the window has been resized
-	points.resize(rect_size.x + 1)
-	colors.resize(rect_size.x + 1)
+	points.resize(size.x + 1)
+	colors.resize(size.x + 1)

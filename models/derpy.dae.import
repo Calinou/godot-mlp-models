@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/derpy.dae-edcb75bedb2e453446859b3f06ebe1bb.sc
 
 nodes/root_type="Spatial"
 nodes/root_name="Derpy Hooves"
+nodes/apply_root_scale=true
 nodes/root_scale=1.0
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -24,6 +25,8 @@ meshes/lightmap_texel_size=0.1
 skins/use_named_skins=true
 animation/import=true
 animation/fps=15
+animation/trimming=false
+animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "materials": {
@@ -65,3 +68,4 @@ _subresources={
 }
 }
 }
+gltf/embedded_image_handling=1
